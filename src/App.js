@@ -85,6 +85,7 @@ const App = () => {
               <a
                 href="https://www.solarwinds.com/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-red-700"
               >
                 {" "}
@@ -185,24 +186,34 @@ const App = () => {
             Profiles Elsewhere
           </span>
           <div className="font-serif ">
-            <a href="https://medium.com/@thanumanu84" target="_blank">
+            <a
+              href="https://medium.com/@thanumanu84"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               @medium
             </a>{" "}
             <br />
             <a
               href="https://stackoverflow.com/users/16083983/manoj-s"
               target="_blank"
+              rel="noopener noreferrer"
             >
               @stackoverflow
             </a>
             <br />
-            <a href="https://x.com/Jonumhills_" target="_blank">
+            <a
+              href="https://x.com/Jonumhills_"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               @Twitter
             </a>
             <br />
             <a
               href="https://stackoverflow.com/users/16083983/manoj-s"
               target="_blank"
+              rel="noopener noreferrer"
             >
               @stackoverflow
             </a>
