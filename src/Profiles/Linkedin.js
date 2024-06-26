@@ -1,7 +1,11 @@
 const Linkedin = () => {
   return (
     <>
-      <a href="https://www.linkedin.com/in/manojsrinivasa/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/manojsrinivasa/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg
           class="w-6 h-6 rounded-lg text-gray-300 hover:bg-gray-300 hover:text-red-700  ml-2"
           aria-hidden="true"
