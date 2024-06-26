@@ -24,12 +24,9 @@ const Carousel = ({ projects }) => {
       containerRef.current.style.transition = "transform 0.5s ease-in-out";
       containerRef.current.style.transform = `translateX(-${currentP * 100}%)`;
     }
-  }, [currentP]);
-
-  React.useEffect(() => {
     const interval = setInterval(nextP, 5000);
-    return () => clearInterval(interval); // Clean up the interval on component unmount
-  }, []);
+    return () => clearInterval(interval);
+  });
 
   return (
     <div className="relative w-full  mx-auto mt-2">

@@ -101,59 +101,59 @@ const App = () => {
       </div>
       <div className="container mx-auto  w-1/2 p-2 md:p-4">
         <div className="bg-white shadow-md rounded-lg p-6 md:p-10 lg:p-12">
-          <div class="container mx-auto">
-            <div class="overflow-x-auto">
+          <div className="container mx-auto">
+            <div className="overflow-x-auto">
               <span className="font-serif text-2xl md:text-2xl lg:text-2xl font-bold mb-4 text-white bg-red-700 hover:bg-red-100 hover:text-red-700">
                 {" "}
                 Skills
               </span>
-              <table class="mx-auto w-full max-w-4xl overflow-hidden text-sm m-1 text-left rtl:text-right text-gray-500 dark:text-gray-400">
+              <table className="mx-auto w-full max-w-4xl overflow-hidden text-sm m-1 text-left rtl:text-right text-gray-500 dark:text-gray-400">
                 <tbody>
-                  <tr class="odd:bg-white even:bg-gray-100 even:dark:bg-gray-800 border-b">
-                    <td class="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
+                  <tr className="odd:bg-white even:bg-gray-100 even:dark:bg-gray-800 border-b">
+                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
                       CI/CD
                     </td>
-                    <td class="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
+                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
                       CircleCI, GitHub Actions
                     </td>
                   </tr>
-                  <tr class="odd:bg-white even:bg-gray-100 border-b">
-                    <td class="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
+                  <tr className="odd:bg-white even:bg-gray-100 border-b">
+                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
                       Languages
                     </td>
-                    <td class="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
+                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
                       Java, JavaScript, Python
                     </td>
                   </tr>
-                  <tr class="odd:bg-white even:bg-gray-100 border-b">
-                    <td class="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
+                  <tr className="odd:bg-white even:bg-gray-100 border-b">
+                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
                       Cloud
                     </td>
-                    <td class="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
+                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
                       AWS, Azure
                     </td>
                   </tr>
-                  <tr class="odd:bg-white even:bg-gray-100 border-b">
-                    <td class="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
+                  <tr className="odd:bg-white even:bg-gray-100 border-b">
+                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
                       Database
                     </td>
-                    <td class="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
+                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
                       MySQL, Redis, ClickHouse
                     </td>
                   </tr>
-                  <tr class="odd:bg-white even:bg-gray-100 border-b">
-                    <td class="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
+                  <tr className="odd:bg-white even:bg-gray-100 border-b">
+                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
                       API's
                     </td>
-                    <td class="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
+                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
                       gRPC, GraphQL, REST
                     </td>
                   </tr>
-                  <tr class="odd:bg-white even:bg-gray-100 border-b">
-                    <td class="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
+                  <tr className="odd:bg-white even:bg-gray-100 border-b">
+                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
                       Framework/Tools
                     </td>
-                    <td class="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
+                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
                       Git, Intellij, K9S, BloomRPC, Shell, Docker, Dropwizard,
                       Kafka
                     </td>
