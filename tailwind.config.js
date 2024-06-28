@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        "2/5": "60%",
+      },
+    },
     fontFamily: {
       serif: "Times New Roman",
     },

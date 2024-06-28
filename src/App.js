@@ -50,31 +50,26 @@ const App = () => {
   return (
     <>
       <div className="App">
-        <div className="container mx-auto  w-1/2 p-2 md:p-4">
+        <div className="container mx-auto w-full sm:w-3/4 md:w-2/5 p-2 md:p-4">
           <div className="bg-white shadow-md rounded-lg p-6 md:p-10 lg:p-12">
-            <span className="flex items-center justify-between ">
-              <span className="font-serif text-2xl md:text-2xl lg:text-2xl font-bold mb-4 text-white bg-red-700 hover:bg-gray-200 hover:rounded-sm hover:text-red-700">
+            <span className="flex flex-col md:flex-row items-center justify-between">
+              <span className="font-serif text-xl sm:text-2xl md:text-2xl lg:text-2xl font-bold mb-4 text-white bg-red-700 hover:bg-gray-200 hover:rounded-sm hover:text-red-700">
                 Manoj Srinivasa!{" "}
               </span>
-
-              <span className="ml-2 inline-flex">
+              <span className="ml-0 md:ml-2 inline-flex mt-4 md:mt-0">
                 <Github />
                 <Instagram />
                 <Linkedin />
                 <button
                   type="button"
-                  className="flex items-start font-sans ml-1 px-3 py-2 text-xs font-medium
-     text-center text-gray-400 bg-gray-100 rounded-lg
-      hover:bg-gray-300 hover:text-red-700
-       "
+                  className="flex items-start font-sans ml-1 px-3 py-2 text-xs font-medium text-center text-gray-400 bg-gray-100 rounded-lg hover:bg-gray-300 hover:text-red-700"
                   onClick={openResume}
                 >
                   Resume
                 </button>
               </span>
             </span>
-
-            <p className="font-serif text-base  md:text-lg text-black mt-4">
+            <p className="font-serif text-base sm:text-lg md:text-lg text-black mt-4">
               Hi, I'm Manoj Srinivasa, your go-to backend guy and cloud
               architect. With over 3 years of experience in Backend Development,
               I've designed APIs and specialize in high-level and low-level
@@ -91,7 +86,7 @@ const App = () => {
                 {" "}
                 Solarwinds{" "}
               </a>
-              , I was part of <i>Obersvability</i> Product team creating gRPC
+              , I was part of <i>Observability</i> Product team creating gRPC
               APIs and designing streaming workflows to stream monitoring data
               from AWS and Azure. Presently, I am completing my master's in
               computer science at George Washington University.
@@ -99,75 +94,73 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto  w-1/2 p-2 md:p-4">
+
+      <div className="container mx-auto w-full sm:w-3/4 md:w-2/5 p-2 md:p-4">
         <div className="bg-white shadow-md rounded-lg p-6 md:p-10 lg:p-12">
-          <div className="container mx-auto">
-            <div className="overflow-x-auto">
-              <span className="font-serif text-2xl md:text-2xl lg:text-2xl font-bold mb-4 text-white bg-red-700 hover:bg-red-100 hover:text-red-700">
-                {" "}
-                Skills
-              </span>
-              <table className="mx-auto w-full max-w-4xl overflow-hidden text-sm m-1 text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                <tbody>
-                  <tr className="odd:bg-white even:bg-gray-100 even:dark:bg-gray-800 border-b">
-                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
-                      CI/CD
-                    </td>
-                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
-                      CircleCI, GitHub Actions
-                    </td>
-                  </tr>
-                  <tr className="odd:bg-white even:bg-gray-100 border-b">
-                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
-                      Languages
-                    </td>
-                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
-                      Java, JavaScript, Python
-                    </td>
-                  </tr>
-                  <tr className="odd:bg-white even:bg-gray-100 border-b">
-                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
-                      Cloud
-                    </td>
-                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
-                      AWS, Azure
-                    </td>
-                  </tr>
-                  <tr className="odd:bg-white even:bg-gray-100 border-b">
-                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
-                      Database
-                    </td>
-                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
-                      MySQL, Redis, ClickHouse
-                    </td>
-                  </tr>
-                  <tr className="odd:bg-white even:bg-gray-100 border-b">
-                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
-                      API's
-                    </td>
-                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
-                      gRPC, GraphQL, REST
-                    </td>
-                  </tr>
-                  <tr className="odd:bg-white even:bg-gray-100 border-b">
-                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
-                      Framework/Tools
-                    </td>
-                    <td className="px-6 py-1 whitespace-no-wrap border-b border-gray-300">
-                      Git, Intellij, K9S, BloomRPC, Shell, Docker, Dropwizard,
-                      Kafka
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <div className="overflow-x-auto">
+            <span className="font-serif text-xl sm:text-2xl md:text-2xl lg:text-2xl font-bold mb-4 text-white bg-red-700 hover:bg-gray-200 hover:text-red-700">
+              Skills
+            </span>
+            <table className="mx-auto w-full max-w-4xl text-sm text-left text-gray-500 dark:text-gray-400">
+              <tbody>
+                <tr className="odd:bg-white even:bg-gray-100 even:dark:bg-gray-800 border-b">
+                  <td className="px-6 py-1 whitespace-nowrap border-b border-gray-300">
+                    CI/CD
+                  </td>
+                  <td className="px-6 py-1 whitespace-nowrap border-b border-gray-300">
+                    CircleCI, GitHub Actions
+                  </td>
+                </tr>
+                <tr className="odd:bg-white even:bg-gray-100 border-b">
+                  <td className="px-6 py-1 whitespace-nowrap border-b border-gray-300">
+                    Languages
+                  </td>
+                  <td className="px-6 py-1 whitespace-nowrap border-b border-gray-300">
+                    Java, JavaScript, Python
+                  </td>
+                </tr>
+                <tr className="odd:bg-white even:bg-gray-100 border-b">
+                  <td className="px-6 py-1 whitespace-nowrap border-b border-gray-300">
+                    Cloud
+                  </td>
+                  <td className="px-6 py-1 whitespace-nowrap border-b border-gray-300">
+                    AWS, Azure
+                  </td>
+                </tr>
+                <tr className="odd:bg-white even:bg-gray-100 border-b">
+                  <td className="px-6 py-1 whitespace-nowrap border-b border-gray-300">
+                    Database
+                  </td>
+                  <td className="px-6 py-1 whitespace-nowrap border-b border-gray-300">
+                    MySQL, Redis, ClickHouse
+                  </td>
+                </tr>
+                <tr className="odd:bg-white even:bg-gray-100 border-b">
+                  <td className="px-6 py-1 whitespace-nowrap border-b border-gray-300">
+                    API's
+                  </td>
+                  <td className="px-6 py-1 whitespace-nowrap border-b border-gray-300">
+                    gRPC, GraphQL, REST
+                  </td>
+                </tr>
+                <tr className="odd:bg-white even:bg-gray-100 border-b">
+                  <td className="px-6 py-1 whitespace-nowrap border-b border-gray-300">
+                    Framework/Tools
+                  </td>
+                  <td className="px-6 py-1 whitespace-nowrap border-b border-gray-300">
+                    Git, Intellij, K9S, BloomRPC, Shell, Docker, Dropwizard,
+                    Kafka
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto  w-1/2 p-2 md:p-4">
+      <div className="container mx-auto w-full sm:w-3/4 md:w-2/5 p-2 md:p-4">
         <div className="bg-white shadow-md rounded-lg p-6 md:p-10 lg:p-12">
-          <span className="font-serif text-2xl md:text-2xl lg:text-2xl font-bold mb-4 text-white bg-red-700 hover:bg-gray-200 hover:rounded-sm hover:text-red-700">
+          <span className="font-serif text-xl sm:text-2xl md:text-2xl lg:text-2xl font-bold mb-4 text-white bg-red-700 hover:bg-gray-200 hover:rounded-sm hover:text-red-700">
             Projects{" "}
           </span>
           <Carousel projects={projectImages} />
@@ -180,42 +173,43 @@ const App = () => {
         </div>
       </div>
 
-      <div className="container mx-auto  w-1/2 p-2 md:p-4">
+      <div className="container mx-auto w-full sm:w-3/4 md:w-2/5 p-2 md:p-4">
         <div className="bg-white shadow-md rounded-lg p-6 md:p-10 lg:p-12">
-          <span className="font-serif text-2xl md:text-2xl lg:text-2xl font-bold mb-4 text-white bg-red-700 hover:bg-gray-200 hover:rounded-sm hover:text-red-700">
+          <span className="font-serif text-xl sm:text-2xl md:text-2xl lg:text-2xl font-bold mb-4 text-white bg-red-700 hover:bg-gray-200 hover:rounded-sm hover:text-red-700">
             Profiles Elsewhere
           </span>
-          <div className="font-serif ">
+          <div className="font-serif">
             <a
               href="https://medium.com/@thanumanu84"
               target="_blank"
               rel="noopener noreferrer"
+              className="block mt-2"
             >
               @medium
-            </a>{" "}
-            <br />
+            </a>
             <a
               href="https://stackoverflow.com/users/16083983/manoj-s"
               target="_blank"
               rel="noopener noreferrer"
+              className="block mt-2"
             >
               @stackoverflow
             </a>
-            <br />
             <a
               href="https://x.com/Jonumhills_"
               target="_blank"
               rel="noopener noreferrer"
+              className="block mt-2"
             >
               @Twitter
             </a>
-            <br />
             <a
-              href="https://stackoverflow.com/users/16083983/manoj-s"
+              href="https://www.instagram.com/_manoj.photos/"
               target="_blank"
               rel="noopener noreferrer"
+              className="block mt-2"
             >
-              @stackoverflow
+              @instagram
             </a>
           </div>
         </div>
